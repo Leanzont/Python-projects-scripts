@@ -9,7 +9,7 @@ Each project focuses on a specific concept and is documented with a dedicated RE
 
 | Project | Description | Libraries |
 |---------|-------------|-----------|
-| [student_management](./student-management/) | CLI app to manage students, add grades, and calculate averages | OOP |
+| [student_management](./student_management/) | CLI app to manage students, add grades, and calculate averages | OOP |
 
 ## Tech stack
 
