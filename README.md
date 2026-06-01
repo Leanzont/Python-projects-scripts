@@ -12,7 +12,7 @@ Each project focuses on a specific concept and includes its own dedicated docume
 | Project                                       | Description                                                                     | Concepts                       |
 | --------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------ |
 | [student_management](./student_management/)   | CLI application to manage students, store grades, and calculate averages        | OOP, File Handling             |
-| [log_analyzer](./python_log_analyzer/) | Log analyzer that processes INFO, WARNING, and ERROR logs and generates reports | File Handling, Data Processing |
+| [log_analyzer](./log_analyzer/) | Log analyzer that processes INFO, WARNING, and ERROR logs and generates reports | File Handling, Data Processing |
 
 ---
 
