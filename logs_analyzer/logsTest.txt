@@ -1,0 +1,9 @@
+INFO User login successful
+ERROR Failed login attempt for user admin
+WARNING Disk space low on /dev/sda1
+INFO File uploaded successfully
+ERROR Database connection timeout
+ERROR Permission denied on /etc/secret
+INFO User logout
+WARNING CPU usage above 80%
+ERROR Test 
