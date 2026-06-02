@@ -1,9 +1,9 @@
 # Python Projects & Scripts
 
-Python projects, automation scripts, and CLI tools focused on Cloud, DevOps, networking, and AWS-related workflows.
+Python projects and CLI tools focused on automation, problem-solving, and backend fundamentals.
 
 Built as part of a self-directed learning journey toward a Cloud/DevOps Engineering career.
-Each project focuses on a specific concept and includes its own dedicated documentation.
+Each project focuses on a specific concept and includes dedicated documentation.
 
 ---
 
@@ -19,14 +19,10 @@ Each project focuses on a specific concept and includes its own dedicated docume
 # Tech Stack
 
 * Python 3
-* boto3 — AWS SDK for Python
-* requests — HTTP requests and API integration
-* argparse — command-line argument parsing
-* socket — low-level networking
-* json — data serialization
-* OOP — Object-Oriented Programming
+* OOP (Object-Oriented Programming)
 * File Handling
 * CLI Development
+* Data Processing
 
 ---
 
@@ -36,10 +32,8 @@ Each project focuses on a specific concept and includes its own dedicated docume
 git clone https://github.com/Leanzont/Python-projects-scripts.git
 
 cd Python-projects-scripts
-
-pip install boto3 requests
 ```
-
+i
 ---
 
 # Repository Goals
@@ -47,9 +41,7 @@ pip install boto3 requests
 This repository is focused on:
 
 * Python automation
-* AWS scripting
 * CLI tools
-* Networking utilities
 * Problem-solving with Python
 * Building practical projects for Cloud/DevOps environments
 
@@ -80,6 +72,6 @@ Currently building skills in:
 
 Goal: work remotely as a Cloud/DevOps Engineer.
 
-* GitHub: [github.com/Leanzont](https://github.com/Leanzont?utm_source=chatgpt.com)
-* LinkedIn: [Leandro Fabian Zenteno Soliz LinkedIn](https://www.linkedin.com/in/leandro-fabian-zenteno-soliz-3ba1713b7/?utm_source=chatgpt.com)
+* GitHub: github.com/Leanzont
+* LinkedIn: linkedin.com/in/leandro-fabian-zenteno-soliz-3ba1713b7
 
