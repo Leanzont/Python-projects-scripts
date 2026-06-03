@@ -79,8 +79,8 @@ condition, builds the output dictionary, prints it to the terminal, and saves it
 ## Usage
 
 ```bash
-python weather.py --city Cochabamba --lat -17.39 --lon -66.16
-python weather.py --city "New York" --lat 40.71 --lon -74.01
+python weather_cli.py --city Cochabamba --lat -17.39 --lon -66.16
+python weather_cli.py --city "New York" --lat 40.71 --lon -74.01
 ```
 ### CLI Arguments
 
