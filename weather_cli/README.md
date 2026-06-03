@@ -23,8 +23,8 @@ python weather.py --city Cochabamba
 ## Project Structure
 
 ````
-weather/
-├── weather.py
+weather_cli/
+├── weather_cli.py
 └── result_weather.json    # auto-generated after each run
 ````
 
@@ -89,8 +89,6 @@ python weather.py --city "New York" --lat 40.71 --lon -74.01
 | `--city` | ✅ | City name to label the output |
 | `--lat` | ✅ | Latitude coordinate |
 | `--lon` | ✅ | Longitude coordinate |
-
-El resto del README queda exactamente igual.
 
 ### Example Output
 
