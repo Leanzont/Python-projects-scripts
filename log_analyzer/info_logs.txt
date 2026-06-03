@@ -1,9 +1,0 @@
-------- INFO LOGS -------
-INFO: 3
-Lines: ['INFO User login successful', 'INFO File uploaded successfully', 'INFO User logout']
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-WARNING: 2
-Lines: ['WARNING Disk space low on /dev/sda1', 'WARNING CPU usage above 80%']
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ERROR: 4
-Lines: ['ERROR Failed login attempt for user admin', 'ERROR Database connection timeout', 'ERROR Permission denied on /etc/secret', 'ERROR Test']
