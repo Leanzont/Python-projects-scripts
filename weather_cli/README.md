@@ -11,22 +11,24 @@ Sends an HTTP GET request to the Open-Meteo API, extracts the current weather da
 maps the numeric weather code to a human-readable condition, and saves the result to
 `result_weather.json`.
 
-````
-python weather.py --city Cochabamba
-        │                │
-        │                └── passed into the output (display + JSON)
+```
+python weather_cli.py --city Cochabamba --lat -17.39 --lon -66.16
+        │                      │                │              │
+        │                      │                └──────────────┘
+        │                      │                coordinates
+        │                      └── passed into the output (display + JSON)
         └── entry point
-````
+```
 
 ---
 
 ## Project Structure
 
-````
+```
 weather_cli/
 ├── weather_cli.py
 └── result_weather.json    # auto-generated after each run
-````
+```
 
 ---
 
@@ -49,11 +51,13 @@ Uses `dict.get()` with a fallback to handle unknown codes gracefully:
 condition = WEATHER_CODES.get(code, f"Unknown code {code}")
 ```
 
-### `get_weather()` — Core Logic
-Sends a GET request to the Open-Meteo API and validates the response status code.
-Returns only the `current_weather` block from the JSON response:
+### `get_weather(lat, lon)` — Core Logic
+Receives latitude and longitude, builds the API URL dynamically, and sends a GET request
+to the Open-Meteo API. Validates the response status code and returns only the
+`current_weather` block from the JSON response:
 
 ```python
+url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true"
 return response.json()["current_weather"]
 ```
 
@@ -71,8 +75,9 @@ Example API response:
 Writes the structured weather data to `result_weather.json` with 2-space indentation.
 
 ### `main()` — Entry Point
-Parses the `--city` argument, calls `get_weather()`, maps the weather code to a
-condition, builds the output dictionary, prints it to the terminal, and saves it to JSON.
+Parses `--city`, `--lat`, and `--lon` arguments via `argparse`, calls `get_weather(lat, lon)`,
+maps the weather code to a condition, builds the output dictionary, prints it to the terminal,
+and saves it to JSON.
 
 ---
 
@@ -82,6 +87,7 @@ condition, builds the output dictionary, prints it to the terminal, and saves it
 python weather_cli.py --city Cochabamba --lat -17.39 --lon -66.16
 python weather_cli.py --city "New York" --lat 40.71 --lon -74.01
 ```
+
 ### CLI Arguments
 
 | Argument | Required | Description |
@@ -92,12 +98,12 @@ python weather_cli.py --city "New York" --lat 40.71 --lon -74.01
 
 ### Example Output
 
-````
+```
 City       : Cochabamba
 Temperature: 18.1°C
 Condition  : Clear
 Time       : 2026-06-03T15:45
-````
+```
 
 ```json
 {
@@ -125,4 +131,3 @@ pip install requests
 - Dictionary lookup with `.get()` and fallback values
 - CLI argument parsing with `argparse`
 - Structured data serialization with `json`
-
