@@ -8,11 +8,11 @@ Python projects and CLI tools focused on automation, problem-solving, and backen
 
 |Project|Description|Concepts|
 |---|---|---|
-|[student_management](https://claude.ai/chat/student_management/)|CLI application to manage students, store grades, and calculate averages|OOP, File Handling|
-|[log_analyzer](https://claude.ai/chat/log_analyzer/)|Log analyzer that processes INFO, WARNING, and ERROR logs and generates reports|File Handling, Data Processing|
-|[port_scanner](https://claude.ai/chat/port_scanner/)|TCP port scanner that exports results to JSON. No external dependencies.|Networking, Sockets, CLI, JSON|
-|[weather_cli](https://claude.ai/chat/weather_cli/)|Fetches real-time weather for any location via coordinates and exports results to JSON|HTTP Requests, REST API, CLI, JSON|
-|[s3_manager](https://claude.ai/chat/s3_manager/)|CLI tool to create buckets, upload files, and list S3 objects using boto3|AWS S3, boto3, ClientError, S3UploadFailedError, argparse|
+|[student_management](./student_management/)|CLI application to manage students, store grades, and calculate averages|OOP, File Handling|
+|[log_analyzer](./log_analyzer/)|Log analyzer that processes INFO, WARNING, and ERROR logs and generates reports|File Handling, Data Processing|
+|[port_scanner](./port_scanner/)|TCP port scanner that exports results to JSON. No external dependencies.|Networking, Sockets, CLI, JSON|
+|[weather_cli](./weather_cli/)|Fetches real-time weather for any location via coordinates and exports results to JSON|HTTP Requests, REST API, CLI, JSON|
+|[s3_manager](./s3_manager/)|CLI tool to create buckets, upload files, and list S3 objects using boto3|AWS S3, boto3, ClientError, S3UploadFailedError, argparse|
 
 ---
 
